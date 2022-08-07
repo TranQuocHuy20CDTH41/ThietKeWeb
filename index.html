@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="D:/Đồ Án Web/font/font1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/af1c327edd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <!--Header-->
+        <header class="header">
+            <div class="grid">
+
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                            Liên Hệ Admin Bằng QR
+                            <div class="header__qr">
+                                <img src="img/qr.png" alt="QR Code" class="header__qr-img">
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-itemtitle--no-poiter">Kết Nối</span>
+                                <a href="" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon header__navbar fab fa-facebook"></i>
+                                </a>
+                                <a href="" class="header__navbar-icon-link">
+                                    <i class="header__navbar-icon header__navbar fab fa-instagram"></i>
+                                </a>
+                            
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon header__navbar fas fa-bell"></i>
+                                Thông báo
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon header__navbar fas fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong">
+                            <a class="dangki" href="dangki.html"><i class="header__navbar-icon header__navbar fas fa-plus-circle" ></i>
+                            Đăng Kí
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong">
+                            <a class="dangki" href="dangnhap.html">
+                            
+                            <i class="header__navbar-icon header__navbar fas fa-sign-in-alt"></i>
+                            Đăng Nhập
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header Tìm Kiếm -->
+
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <img class="header__logo-img" src="img/2.png" alt="">
+                    </div>
+                    <!-- Tìm Kiếm -->
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Bạn muốn đi đâu !!">
+                            <!-- Lịch sử tìm kiếm -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">
+                                    Lịch sử tìm kiếm
+                                </h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Hạ Long</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Huế</a>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-lable">Trong nước</span>
+                            <i class="header__search-select-icon fa fa-chevron-down" "></i> 
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item ">
+                                    <span>Trong nước</span>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Nước ngoài</span>
+                                </li>
+
+                            </ul>                           
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fa fa-search" ></i>
+                        </button>
+
+                    </div>
+                    <!-- End Tìm Kiếm -->
+                    <!-- giỏ Hàng -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-paper-plane"></i>
+                            <div class="header__cart-list header__cart-list-no-cart">
+                                <img src="img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Bạn chưa đặt tour nào
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Giỏ Hàng -->
+                </div>
+            </div>
+        </header>
+        <!-- Menu -->
+        <div class="menu">
+            <div class="menu">
+                <ul>
+                    <li class="active"><i class="fa fa-home"></i><a href="#">Trang Chủ</a></li>
+                    <li><i class="fa fa-plane"></i><a href="#">Tour Du Lịch</a>
+                        <div class="dulich">
+                            <ul>
+                                <li class="hover"><a href="#">Miền Bắc</a>
+                                    <div class="dulich2">
+                                        <ul>
+                                            <li><a href="#">Hà Hội</a></li>
+                                            <li><a href="#">Quảng Ninh</a></li>
+                                            <li><a href="#">Hà Giang</a></li>
+                                        </ul>
+                                    </div
+                                </li>
+                                <li class="hover"><a href="#">Miền Trung</a>
+                                    <div class="dulich2">
+                                        <ul>
+                                            <li><a href="#">Đà Nẵng</a></li>
+                                            <li><a href="#">Huế</a></li>
+                                            <li><a href="#">Quảng Bình</a></li>
+                                        </ul>
+                                    </div</li>
+                                <li class="hover"><a href="#">Miền Nam</a>
+                                    <div class="dulich2">
+                                        <ul>
+                                            <li><a href="#">Đồng Nai</a></li>
+                                            <li><a href="#">Vũng Tàu</a></li>
+                                            <li><a href="#">Đồng Tháp</a></li>
+                                        </ul>
+                                    </div</li>
+                            </ul>
+                        </div>                  
+                    </li>
+                    <li><i class="fa fa-cutlery" aria-hidden="true"></i><a href="#">Đồ Ăn</a>
+                        <div class="dulich">
+                            <ul>
+                                <li><a href="#">Bữa Ăn Chính</a></li>
+                                <li><a href="#">Tráng Miệng</a></li>
+                                <li><a href="#">Đồ Uống</a></li>
+                            </ul>
+                        </div></li>
+                    <li><i class="fa fa-camera" aria-hidden="true"></i><a href="#">Giải Trí</a>
+                        <div class="dulich">
+                            <ul>
+                                <li><a href="#">Ảnh</a></li>
+                                <li><a href="#">Âm Nhạc</a></li>
+                                <li><a href="#">Video</a></li>
+                            </ul>
+                        </div></li>
+                    <li><i class="fa fa-newspaper-o"></i><a href="#">Tin Tức</a>
+                        <div class="dulich">
+                            <ul>
+                                <li><a href="#">Trong Nước</a></li>
+                                <li><a href="#">Ngoài Nước</a></li>
+                            </ul>
+                        </div></li>
+                    <li><i class="fa fa-reply"></i><a href="#">Liên Hệ</a>
+                        <div class="dulich">
+                            <ul>
+                                <li><a href="#">Fanfage</a></li>
+                                <li><a href="#">Điện Thoại</a></li>
+                                <li><a href="#">Email</a></li>
+                            </ul>
+                        </div></li>
+                </ul>
+                </div>
+        
+        </div>
+        <!-- End Menu -->
+        <!--Banner-->
+        <div class="banner">
+            <img src="img/banner2.jpg" alt="">
+           <i><h2>BẠN MUỐN ĐI ĐÂU !!</h2></i>
+           <i><span class="slogan">
+            Khoảnh khắc khi bạn đến được cái đích của chuyến đi, nhìn ngắm mọi thứ xinh đẹp đang thu vào tầm mắt.  
+           </span>
+           <br>
+           <span class="slogan">Lúc đó bạn sẽ nhận ra mọi sự nỗ lực của mình là vô cùng xứng đáng.</span></i>
+
+        </div>
+        <!-- End Banner -->
+        <br><br><br><br>
+        <div class="tieude">
+            <a href="#" class="tieude__a">TOUR GIÁ TỐT</a> TRONG NƯỚC
+        </div>
+        <!--Content-->
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                    <div class="grid__column-10">
+                     </div>
+                           
+                        </div>
+                        <div class="home-product">
+                            <!-- Tour -->
+                            <div class="grid__row">
+                                <!-- product item -->
+                                <div class="grid__row-column-4">                                   
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img " style="background-image: url(img/halong.jpg);">
+                                        </div>
+                                        <h5 class="home-product-item__name">Hạ Long - Quảng Ninh</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">12.000.000đ</span>
+                                            <span class="home-product-item__price-current">10.000.000đ</span>
+                                        </div>
+                                        <br>
+                                        <div class="home-product-item__active">
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh"> Khởi hành: 3/9/2021</span>                                                                           
+                                                </span>          
+                                                <br>                                  
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time fa fa-clock-o" ></i><span class="ngaykh">Thời Gian: 3 ngày 2 đêm</span>                            
+                                            </span>
+                                            <div class="home-prudeuct-item_action">
+                                            <span class="home-product-item_like home-product-item_like--liked">
+                                                <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                                <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                           
+                                            </span>
+                                            <div class="home-product-item__raiting">
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star-o" ></i>
+                                            </div>
+                                            <span class="home-product-item__sold">109 Đã Đặt</span>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__salle-off">
+                                            <span class="home-product-item__sale-off-lable">Giảm</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>   
+                                        </div>
+                                    </a>                                 
+                                    <button class="datve">Đặt vé</button>
+                                </div>
+                                <div class="grid__row-column-4">                                   
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img " style="background-image: url(img/7.jpg);">
+                                        </div>
+                                        <h5 class="home-product-item__name">Kinh Thành Huế - TT Huế</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">7.000.000đ</span>
+                                            <span class="home-product-item__price-current">5.000.000đ</span>
+                                        </div>
+                                        <br>
+                                        <div class="home-product-item__active">
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh">Khởi hành: 5/9/2021</span>                                                                           
+                                                </span>          
+                                                <br>                                  
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time fa fa-clock" ></i><span class="ngaykh">Thời Gian: 1 ngày 1 đêm</span>                            
+                                            </span>
+                                            <div class="home-prudeuct-item_action">
+                                            <span class="home-product-item_like home-product-item_like--liked">
+                                                <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                                <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                           
+                                            </span>
+                                            <div class="home-product-item__raiting">
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star-o" ></i>
+                                            </div>
+                                            <span class="home-product-item__sold">300 Đã Đặt</span>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__salle-off">
+                                            <span class="home-product-item__sale-off-lable">Giảm</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>   
+                                        </div>
+                                    </a>                                 
+                                    <button class="datve">Đặt vé</button>
+                                </div>
+                                <div class="grid__row-column-4">                                   
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img " style="background-image: url(img/hoian.jpg);">
+                                        </div>
+                                        <h5 class="home-product-item__name">Hội An - TP Đà Nẵng</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">9.000.000đ</span>
+                                            <span class="home-product-item__price-current">6.999.000đ</span>
+                                        </div>
+                                        <br>
+                                        <div class="home-product-item__active">
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh"> Khởi hành: 12/11/2021</span>                                                                           
+                                                </span>          
+                                                <br>                                  
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time fa fa-clock" ></i><span class="ngaykh">Thời Gian: 2 ngày 1 đêm</span>                            
+                                            </span>
+                                            <div class="home-prudeuct-item_action">
+                                            <span class="home-product-item_like home-product-item_like--liked">
+                                                <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                                <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                           
+                                            </span>
+                                            <div class="home-product-item__raiting">
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star-o" ></i>
+                                            </div>
+                                            <span class="home-product-item__sold">142 Đã Đặt</span>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__salle-off">
+                                            <span class="home-product-item__sale-off-lable">Giảm</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>   
+                                        </div>
+                                    </a>                                 
+                                    <button class="datve">Đặt vé</button>
+                                </div>
+                                <div class="grid__row-column-4">                                   
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img " style="background-image: url(img/mapilen.jpg);">
+                                        </div>
+                                        <h5 class="home-product-item__name">Mã Pí Lèng - Hà Giang</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">8.000.000đ</span>
+                                            <span class="home-product-item__price-current">6.000.000đ</span>
+                                        </div>
+                                        <br>
+                                        <div class="home-product-item__active">
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh">Khởi hành: 20/8/2021</span>                                                                           
+                                                </span>          
+                                                <br>                                  
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time fa fa-clock" ></i><span class="ngaykh">Thời Gian: 2 ngày 2 đêm</span>                            
+                                            </span>
+                                            <div class="home-prudeuct-item_action">
+                                            <span class="home-product-item_like home-product-item_like--liked">
+                                                <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                                <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                           
+                                            </span>
+                                            <div class="home-product-item__raiting">
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star-o" ></i>
+                                            </div>
+                                            <span class="home-product-item__sold">209 Đã Đặt</span>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__salle-off">
+                                            <span class="home-product-item__sale-off-lable">Giảm</span>
+                                            <span class="home-product-item__sale-off-percent">10%</span>   
+                                        </div>
+                                    </a>                                 
+                                    <button class="datve">Đặt vé</button>
+                                </div>
+                                <div class="grid__row-column-4">                                   
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img " style="background-image: url(img/nhatrang.jpg);">
+                                        </div>
+                                        <h5 class="home-product-item__name">Nha Trang - Việt Nam</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">15.000.000đ</span>
+                                            <span class="home-product-item__price-current">13.950.000đ</span>
+                                        </div>
+                                        <br>
+                                        <div class="home-product-item__active">
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh">Khởi hành: 7/9/2021</span>                                                                           
+                                                </span>          
+                                                <br>                                  
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time fa fa-clock" ></i><span class="ngaykh">Thời Gian: 2 ngày 3 đêm</span>                            
+                                            </span>
+                                            <div class="home-prudeuct-item_action">
+                                            <span class="home-product-item_like home-product-item_like--liked">
+                                                <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                                <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                           
+                                            </span>
+                                            <div class="home-product-item__raiting">
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star-o" ></i>
+                                            </div>
+                                            <span class="home-product-item__sold">220 Đã Đặt</span>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__salle-off">
+                                            <span class="home-product-item__sale-off-lable">Giảm</span>
+                                            <span class="home-product-item__sale-off-percent">4%</span>   
+                                        </div>
+                                    </a>                                 
+                                    <button class="datve">Đặt vé</button>
+                                </div>
+                                <div class="grid__row-column-4">                                   
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img " style="background-image: url(img/phuquoc.jpg);">
+                                        </div>
+                                        <h5 class="home-product-item__name">Phú Quốc - Kiên Giang</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">16.000.000đ</span>
+                                            <span class="home-product-item__price-current">14.850.000đ</span>
+                                        </div>
+                                        <br>
+                                        <div class="home-product-item__active">
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh">Khởi hành: 05/10/2021</span>                                                                           
+                                                </span>          
+                                                <br>                                  
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time fa fa-clock" ></i><span class="ngaykh">Thời Gian: 5 ngày 4 đêm</span>                            
+                                            </span>
+                                            <div class="home-prudeuct-item_action">
+                                            <span class="home-product-item_like home-product-item_like--liked">
+                                                <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                                <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                           
+                                            </span>
+                                            <div class="home-product-item__raiting">
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star-o" ></i>
+                                            </div>
+                                            <span class="home-product-item__sold">250 Đã Đặt</span>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__salle-off">
+                                            <span class="home-product-item__sale-off-lable">Giảm</span>
+                                            <span class="home-product-item__sale-off-percent">6%</span>   
+                                        </div>
+                                    </a>                                 
+                                    <button class="datve">Đặt vé</button>
+                                </div>
+                                <div class="grid__row-column-4">                                   
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img " style="background-image: url(img/phongnha.jpg);">
+                                        </div>
+                                        <h5 class="home-product-item__name">Phong Nha - Kẻ Bàng </h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">9.000.000đ</span>
+                                            <span class="home-product-item__price-current">6.950.000đ</span>
+                                        </div>
+                                        <br>
+                                        <div class="home-product-item__active">
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh">Khởi hành: 7/9/2021</span>                                                                           
+                                                </span>          
+                                                <br>                                  
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time fa fa-clock" ></i><span class="ngaykh">Thời Gian: 2 ngày 1 đêm</span>                            
+                                            </span>
+                                            <div class="home-prudeuct-item_action">
+                                            <span class="home-product-item_like home-product-item_like--liked">
+                                                <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                                <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                           
+                                            </span>
+                                            <div class="home-product-item__raiting">
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star-o" ></i>
+                                            </div>
+                                            <span class="home-product-item__sold">450 Đã Đặt</span>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__salle-off">
+                                            <span class="home-product-item__sale-off-lable">Giảm</span>
+                                            <span class="home-product-item__sale-off-percent">7%</span>   
+                                        </div>
+                                    </a>                                 
+                                    <button class="datve">Đặt vé</button>
+                                </div>
+                                <div class="grid__row-column-4">                                   
+                                    <a class="home-product-item" href="">
+                                        <div class="home-product-item__img " style="background-image: url(img/dalat.jpg);">
+                                        </div>
+                                        <h5 class="home-product-item__name">Đà Lạt - Lâm Đồng</h5>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">20.000.000đ</span>
+                                            <span class="home-product-item__price-current">17.850.000đ</span>
+                                        </div>
+                                        <br>
+                                        <div class="home-product-item__active">
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh">Khởi hành: 05/07/2021</span>                                                                           
+                                                </span>          
+                                                <br>                                  
+                                            <span class="home-product-item_time ">
+                                                <i class="icon-time fa fa-clock" ></i><span class="ngaykh">Thời Gian: 5 ngày 4 đêm</span>                            
+                                            </span>
+                                            <div class="home-prudeuct-item_action">
+                                            <span class="home-product-item_like home-product-item_like--liked">
+                                                <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                                <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                           
+                                            </span>
+                                            <div class="home-product-item__raiting">
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star" ></i>
+                                                <i class="fa fa-star-o" ></i>
+                                            </div>
+                                            <span class="home-product-item__sold">199 Đã Đặt</span>
+                                            </div>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa fa-check"></i>
+                                            Yêu thích
+                                        </div>
+                                        <div class="home-product-item__salle-off">
+                                            <span class="home-product-item__sale-off-lable">Giảm</span>
+                                            <span class="home-product-item__sale-off-percent">4%</span>   
+                                        </div>
+                                    </a>                                 
+                                    <button class="datve">Đặt vé</button>
+                                </div>                                
+                            </div>
+                            <!-- End Tour -->
+                        </div>
+                    </div>  
+                    <div class="pagination">
+                        <a href="#">«</a>
+                        <a class="active" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">...</a>
+                        <a href="#">8</a>
+                        <a href="#">»</a>
+                      </div>
+                    <img class="bannerdulich" src="img/bannerdulich.jpg" alt="">
+                    <div class="tieude">
+                        <a href="#" class="tieude__a">TOUR GIÁ TỐT</a> NƯỚC NGOÀI
+                    </div> 
+                    <div class="grid__row">
+                        <!-- product item -->
+                        <div class="grid__row-column-4">                                   
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img " style="background-image: url(img/tokyo-nhattban.jpg);">
+                                </div>
+                                <h5 class="home-product-item__name">Tokyo - Nhật Bản</h5>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">42.000.000đ</span>
+                                    <span class="home-product-item__price-current">35.800.000đ</span>
+                                </div>
+                                <br>
+                                <div class="home-product-item__active">
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh"> Khởi hành: 20/1/2022</span>                                                                           
+                                        </span>          
+                                        <br>                                  
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time fa fa-clock" ></i><span class="ngaykh">Thời Gian: 7 ngày 6 đêm</span>                            
+                                    </span>
+                                    <div class="home-prudeuct-item_action">
+                                    <span class="home-product-item_like home-product-item_like--liked">
+                                        <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                        <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                   
+                                    </span>
+                                    <div class="home-product-item__raiting">
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star-o" ></i>
+                                    </div>
+                                    <span class="home-product-item__sold">87 Đã Đặt</span>
+                                    </div>
+                                </div>
+                                <div class="home-product-item__favourite">
+                                    <i class="fa fa-check"></i>
+                                    Yêu thích
+                                </div>
+                                <div class="home-product-item__salle-off">
+                                    <span class="home-product-item__sale-off-lable">Giảm</span>
+                                    <span class="home-product-item__sale-off-percent">8%</span>   
+                                </div>
+                            </a>                                 
+                            <button class="datve">Đặt vé</button>
+                        </div>
+                        <div class="grid__row-column-4">                                   
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img " style="background-image: url(img/rome-italy.jpg);">
+                                </div>
+                                <h5 class="home-product-item__name">TP Rome - Italya</h5>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">71.000.000đ</span>
+                                    <span class="home-product-item__price-current">65.000.000đ</span>
+                                </div>
+                                <br>
+                                <div class="home-product-item__active">
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh">Khởi hành: 15/9/2021</span>                                                                           
+                                        </span>          
+                                        <br>                                  
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time fa fa-clock" ></i><span class="ngaykh">Thời Gian: 9 ngày 8 đêm</span>                            
+                                    </span>
+                                    <div class="home-prudeuct-item_action">
+                                    <span class="home-product-item_like home-product-item_like--liked">
+                                        <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                        <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                   
+                                    </span>
+                                    <div class="home-product-item__raiting">
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star-o" ></i>
+                                    </div>
+                                    <span class="home-product-item__sold">32 Đã Đặt</span>
+                                    </div>
+                                </div>
+                                <div class="home-product-item__favourite">
+                                    <i class="fa fa-check"></i>
+                                    Yêu thích
+                                </div>
+                                <div class="home-product-item__salle-off">
+                                    <span class="home-product-item__sale-off-lable">Giảm</span>
+                                    <span class="home-product-item__sale-off-percent">5%</span>   
+                                </div>
+                            </a>                                 
+                            <button class="datve">Đặt vé</button>
+                        </div>
+                        <div class="grid__row-column-4">                                   
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img " style="background-image: url(img/paris-phap.jpg);" >
+                                </div>
+                                <h5 class="home-product-item__name">Thủ đô Paris - Pháp</h5>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">42.000.000đ</span>
+                                    <span class="home-product-item__price-current">31.990.000đ</span>
+                                </div>
+                                <br>
+                                <div class="home-product-item__active">
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh"> Khởi hành: 4/1/2022</span>                                                                           
+                                        </span>          
+                                        <br>                                  
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time fa fa-clock" ></i><span class="ngaykh">Thời Gian: 6 ngày 5 đêm</span>                            
+                                    </span>
+                                    <div class="home-prudeuct-item_action">
+                                    <span class="home-product-item_like home-product-item_like--liked">
+                                        <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                        <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                   
+                                    </span>
+                                    <div class="home-product-item__raiting">
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star-o" ></i>
+                                    </div>
+                                    <span class="home-product-item__sold">15 Đã Đặt</span>
+                                    </div>
+                                </div>
+                                <div class="home-product-item__favourite">
+                                    <i class="fa fa-check"></i>
+                                    Yêu thích
+                                </div>
+                                <div class="home-product-item__salle-off">
+                                    <span class="home-product-item__sale-off-lable">Giảm</span>
+                                    <span class="home-product-item__sale-off-percent">12%</span>   
+                                </div>
+                            </a>                                 
+                            <button class="datve">Đặt vé</button>
+                        </div>
+                        <div class="grid__row-column-4">                                   
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img " style="background-image: url(img/osaka-nhatban.jpg);">
+                                </div>
+                                <h5 class="home-product-item__name">TP Osaka - Nhật Bản</h5>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">28.000.000đ</span>
+                                    <span class="home-product-item__price-current">26.999.000đ</span>
+                                </div>
+                                <br>
+                                <div class="home-product-item__active">
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh">Khởi hành: 29/11/2021</span>                                                                           
+                                        </span>          
+                                        <br>                                  
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time fa fa-clocks" ></i><span class="ngaykh">Thời Gian: 3 ngày 2 đêm</span>                            
+                                    </span>
+                                    <div class="home-prudeuct-item_action">
+                                    <span class="home-product-item_like home-product-item_like--liked">
+                                        <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                        <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                   
+                                    </span>
+                                    <div class="home-product-item__raiting">
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star-o" ></i>
+                                    </div>
+                                    <span class="home-product-item__sold">19 Đã Đặt</span>
+                                    </div>
+                                </div>
+                                <div class="home-product-item__favourite">
+                                    <i class="fa fa-check"></i>
+                                    Yêu thích
+                                </div>
+                                <div class="home-product-item__salle-off">
+                                    <span class="home-product-item__sale-off-lable">Giảm</span>
+                                    <span class="home-product-item__sale-off-percent">3%</span>   
+                                </div>
+                            </a>                                 
+                            <button class="datve">Đặt vé</button>
+                        </div>
+                        <div class="grid__row-column-4">                                   
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img " style="background-image: url(img/berlin-duc.jpg);">
+                                </div>
+                                <h5 class="home-product-item__name">Thủ đô Berlin - Đức</h5>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">22.000.000đ</span>
+                                    <span class="home-product-item__price-current">19.800.000đ</span>
+                                </div>
+                                <br>
+                                <div class="home-product-item__active">
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh"> Khởi hành: 13/6/2021</span>                                                                           
+                                        </span>          
+                                        <br>                                  
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time fa fa-clock" ></i><span class="ngaykh">Thời Gian: 3 ngày 2 đêm</span>                            
+                                    </span>
+                                    <div class="home-prudeuct-item_action">
+                                    <span class="home-product-item_like home-product-item_like--liked">
+                                        <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                        <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                   
+                                    </span>
+                                    <div class="home-product-item__raiting">
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star-o" ></i>
+                                    </div>
+                                    <span class="home-product-item__sold">22 Đã Đặt</span>
+                                    </div>
+                                </div>
+                                <div class="home-product-item__favourite">
+                                    <i class="fa fa-check"></i>
+                                    Yêu thích
+                                </div>
+                                <div class="home-product-item__salle-off">
+                                    <span class="home-product-item__sale-off-lable">Giảm</span>
+                                    <span class="home-product-item__sale-off-percent">10%</span>   
+                                </div>
+                            </a>                                 
+                            <button class="datve">Đặt vé</button>
+                        </div>
+                        <div class="grid__row-column-4">                                   
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img " style="background-image: url(img/london-anh.jpeg);">
+                                </div>
+                                <h5 class="home-product-item__name">Thủ Đô London - Anh</h5>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">32.000.000đ</span>
+                                    <span class="home-product-item__price-current">25.000.000đ</span>
+                                </div>
+                                <br>
+                                <div class="home-product-item__active">
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh">Khởi hành: 5/12/2021</span>                                                                           
+                                        </span>          
+                                        <br>                                  
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time fa fa-clock" ></i><span class="ngaykh">Thời Gian: 3 ngày 2 đêm</span>                            
+                                    </span>
+                                    <div class="home-prudeuct-item_action">
+                                    <span class="home-product-item_like home-product-item_like--liked">
+                                        <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                        <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                   
+                                    </span>
+                                    <div class="home-product-item__raiting">
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star-o" ></i>
+                                    </div>
+                                    <span class="home-product-item__sold">41 Đã Đặt</span>
+                                    </div>
+                                </div>
+                                <div class="home-product-item__favourite">
+                                    <i class="fa fa-check"></i>
+                                    Yêu thích
+                                </div>
+                                <div class="home-product-item__salle-off">
+                                    <span class="home-product-item__sale-off-lable">Giảm</span>
+                                    <span class="home-product-item__sale-off-percent">9%</span>   
+                                </div>
+                            </a>                                 
+                            <button class="datve">Đặt vé</button>
+                        </div>
+                        <div class="grid__row-column-4">                                   
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img " style="background-image: url(img/rio-brazil.jpg);">
+                                </div>
+                                <h5 class="home-product-item__name">Rio De Janeiro - Brazil</h5>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">71.000.000đ</span>
+                                    <span class="home-product-item__price-current">60.999.000đ</span>
+                                </div>
+                                <br>
+                                <div class="home-product-item__active">
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh"> Khởi hành: 01/07/2021</span>                                                                           
+                                        </span>          
+                                        <br>                                  
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time fa fa-clock" ></i><span class="ngaykh">Thời Gian: 7 ngày 6 đêm</span>                            
+                                    </span>
+                                    <div class="home-prudeuct-item_action">
+                                    <span class="home-product-item_like home-product-item_like--liked">
+                                        <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                        <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                   
+                                    </span>
+                                    <div class="home-product-item__raiting">
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star-o" ></i>
+                                    </div>
+                                    <span class="home-product-item__sold">12 Đã Đặt</span>
+                                    </div>
+                                </div>
+                                <div class="home-product-item__favourite">
+                                    <i class="fa fa-check"></i>
+                                    Yêu thích
+                                </div>
+                                <div class="home-product-item__salle-off">
+                                    <span class="home-product-item__sale-off-lable">Giảm</span>
+                                    <span class="home-product-item__sale-off-percent">10%</span>   
+                                </div>
+                            </a>                                 
+                            <button class="datve">Đặt vé</button>
+                        </div>
+                        <div class="grid__row-column-4">                                   
+                            <a class="home-product-item" href="">
+                                <div class="home-product-item__img " style="background-image: url(img/dubai.jpg);">
+                                </div>
+                                <h5 class="home-product-item__name">TP Dubai - UAE</h5>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">81.000.000đ</span>
+                                    <span class="home-product-item__price-current">75.000.000đ</span>
+                                </div>
+                                <br>
+                                <div class="home-product-item__active">
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time-1 fa fa-calendar"></i><span class="ngaykh">Khởi hành: 30/7/2021</span>                                                                           
+                                        </span>          
+                                        <br>                                  
+                                    <span class="home-product-item_time ">
+                                        <i class="icon-time fa fa-clocks" ></i><span class="ngaykh">Thời Gian: 5 ngày 4 đêm</span>                            
+                                    </span>
+                                    <div class="home-prudeuct-item_action">
+                                    <span class="home-product-item_like home-product-item_like--liked">
+                                        <i class="home-product-item_like-icon-empty fa fa-heart-o"></i>    
+                                        <i class="home-product-item_like-icon-fill fa fa-heart"></i>
+                                   
+                                    </span>
+                                    <div class="home-product-item__raiting">
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star" ></i>
+                                        <i class="fa fa-star-o" ></i>
+                                    </div>
+                                    <span class="home-product-item__sold">18 Đã Đặt</span>
+                                    </div>
+                                </div>
+                                <div class="home-product-item__favourite">
+                                    <i class="fa fa-check"></i>
+                                    Yêu thích
+                                </div>
+                                <div class="home-product-item__salle-off">
+                                    <span class="home-product-item__sale-off-lable">Giảm</span>
+                                    <span class="home-product-item__sale-off-percent">6%</span>   
+                                </div>
+                            </a>                                 
+                            <button class="datve">Đặt vé</button>
+                        </div>                    
+                </div>               
+            </div>       
+        </div>      
+          <!-- Phân Trang -->
+        <div class="pagination">
+            <a href="#">«</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">...</a>
+            <a href="#">7</a>
+            <a href="#">»</a>
+         </div>
+        <!--Footer-->
+        <footer class="footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__row-column-4">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-list">
+                                <a href="" class="footer-item__link">Phản hồi ý kiến</a>
+                            </li>
+                            <li class="footer-list">
+                                <a href="" class="footer-item__link">Hướng dẫn đặt tour </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__row-column-4">
+                        <h3 class="footer__heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới thiệu </a>
+                            </li>
+                            <li class="footer-list">
+                                <a href="" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-list">
+                                <a href="" class="footer-item__link">Điều khoản</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="grid__row-column-4">
+                        <h3 class="footer__heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa fa-facebook-square" ></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-list">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-list">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fa fa-twitter"></i>
+                                    Twitter
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="grid__row-column-4">
+                        <h3 class="footer__heading">Liên hệ </h3>
+                        <li class="footer-list">
+                            <a href="" class="footer-item__link">Phản hồi</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="" class="footer-item__link">Qua email</a>
+                        </li>
+                        <li class="footer-list">
+                            <a href="" class="footer-item__link">Đánh giá chất lượng</a>
+                        </li>
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="footer__bottom">
+
+                <div class="grid">
+                    <p class="footer__text">Đồ án HTML CSS trường CĐCN Huế<br>Sinh viên thực hiện: <br>Lê Hữu Tài <br> Trần Quốc Huy <br> Lê Viết Hoàng Long
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</body>
+</html>
